@@ -1,0 +1,33 @@
+{
+  description = '' A dynamic preferences-system with a table-like structure for Nim.'';
+
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
+  
+  inputs.src-niprefs-main.flake = false;
+  inputs.src-niprefs-main.owner = "Patitotective";
+  inputs.src-niprefs-main.ref   = "refs/heads/main";
+  inputs.src-niprefs-main.repo  = "niprefs";
+  inputs.src-niprefs-main.type  = "github";
+  
+  inputs."npeg".owner = "nim-nix-pkgs";
+  inputs."npeg".ref   = "master";
+  inputs."npeg".repo  = "npeg";
+  inputs."npeg".type  = "github";
+  inputs."npeg".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."npeg".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-niprefs-main"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-niprefs-main";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
+}
