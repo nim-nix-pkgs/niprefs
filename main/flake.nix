@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-niprefs-main.flake = false;
+  inputs.src-niprefs-main.ref   = "refs/heads/main";
   inputs.src-niprefs-main.owner = "Patitotective";
-  inputs.src-niprefs-main.ref   = "main";
   inputs.src-niprefs-main.repo  = "niprefs";
   inputs.src-niprefs-main.type  = "github";
   
