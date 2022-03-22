@@ -1,5 +1,5 @@
 {
-  description = '' A dynamic preferences-system with a table-like structure for Nim.'';
+  description = ''Store and manage preferences dynamically in a text file within table-like structure.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-niprefs-main.flake = false;
   inputs.src-niprefs-main.owner = "Patitotective";
-  inputs.src-niprefs-main.ref   = "refs/heads/main";
+  inputs.src-niprefs-main.ref   = "main";
   inputs.src-niprefs-main.repo  = "niprefs";
   inputs.src-niprefs-main.type  = "github";
   
   inputs."npeg".owner = "nim-nix-pkgs";
   inputs."npeg".ref   = "master";
   inputs."npeg".repo  = "npeg";
+  inputs."npeg".dir   = "0_26_0";
   inputs."npeg".type  = "github";
   inputs."npeg".inputs.nixpkgs.follows = "nixpkgs";
   inputs."npeg".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
