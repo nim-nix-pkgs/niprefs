@@ -15,6 +15,14 @@
   inputs."niprefs-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."niprefs-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."niprefs-0_1_1".dir   = "0_1_1";
+  inputs."niprefs-0_1_1".owner = "nim-nix-pkgs";
+  inputs."niprefs-0_1_1".ref   = "master";
+  inputs."niprefs-0_1_1".repo  = "niprefs";
+  inputs."niprefs-0_1_1".type  = "github";
+  inputs."niprefs-0_1_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."niprefs-0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;
