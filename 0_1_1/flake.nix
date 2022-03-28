@@ -11,7 +11,6 @@
   inputs.src-niprefs-0_1_1.ref   = "refs/tags/0.1.1";
   inputs.src-niprefs-0_1_1.owner = "Patitotective";
   inputs.src-niprefs-0_1_1.repo  = "niprefs";
-  inputs.src-niprefs-0_1_1.dir   = "";
   inputs.src-niprefs-0_1_1.type  = "github";
   
   inputs."npeg".owner = "nim-nix-pkgs";
