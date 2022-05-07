@@ -70,11 +70,11 @@
     "src-niprefs-main": {
       "flake": false,
       "locked": {
-        "lastModified": 1651423816,
-        "narHash": "sha256-UYz50bwyblTLLtgqNiApv5IBVPGZynyMBa+dfXDFJdc=",
+        "lastModified": 1651794527,
+        "narHash": "sha256-bcMfYsUUwcN1Hh9Z1Jgul2BHR3XMMvq8U4POOlEOjko=",
         "owner": "Patitotective",
         "repo": "niprefs",
-        "rev": "526f161b2265d3aca82fa2d4cc7e81f1987c047f",
+        "rev": "9127597f338641a09844c1bb2ca5487644ed5cbd",
         "type": "github"
       },
       "original": {
