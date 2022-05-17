@@ -64,10 +64,10 @@
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
         "npeg": "npeg",
-        "src-niprefs-main": "src-niprefs-main"
+        "src-niprefs-0_2_2": "src-niprefs-0_2_2"
       }
     },
-    "src-niprefs-main": {
+    "src-niprefs-0_2_2": {
       "flake": false,
       "locked": {
         "lastModified": 1652399787,
@@ -79,7 +79,7 @@
       },
       "original": {
         "owner": "Patitotective",
-        "ref": "refs/heads/main",
+        "ref": "refs/tags/0.2.2",
         "repo": "niprefs",
         "type": "github"
       }
