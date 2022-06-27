@@ -65,22 +65,22 @@
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
         "npeg": "npeg",
-        "src-niprefs-main": "src-niprefs-main"
+        "src-niprefs-0_2_3": "src-niprefs-0_2_3"
       }
     },
-    "src-niprefs-main": {
+    "src-niprefs-0_2_3": {
       "flake": false,
       "locked": {
-        "lastModified": 1655672634,
-        "narHash": "sha256-WGZAHAULYMVQ6ilWtGaXOeLoOP5dHgeEHRc07E36PcU=",
+        "lastModified": 1653700993,
+        "narHash": "sha256-JngP7VlN7XGUqHW4DI5AWb26wg8MYSoXsKZC83hzCls=",
         "owner": "Patitotective",
         "repo": "niprefs",
-        "rev": "5a961fba6de448d621cf6808d933be179558a25b",
+        "rev": "81aa622e871446a420c8fb04fae6d0103be450fc",
         "type": "github"
       },
       "original": {
         "owner": "Patitotective",
-        "ref": "refs/heads/main",
+        "ref": "refs/tags/0.2.3",
         "repo": "niprefs",
         "type": "github"
       }
